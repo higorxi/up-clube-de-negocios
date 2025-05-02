@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Bell, Moon } from 'lucide-react';
+import { Bell, MenuIcon, Moon } from 'lucide-react';
 import { User as UserType } from '../types';
 
 interface HeaderProps {
   user: UserType;
+  onMenuClick?: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ user }) => {
+const Header: React.FC<HeaderProps> = ({ user, onMenuClick }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
   const [notifications, setNotifications] = useState([
@@ -58,7 +59,13 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
   };
 
   return (
-    <header className="bg-white shadow-sm h-16 px-6 flex items-center justify-between">
+    <header className="bg-white shadow px-4 py-3 flex items-center justify-between lg:justify-end">
+      <button
+        className="lg:hidden text-primary-900"
+        onClick={onMenuClick}
+      >
+        <MenuIcon className="w-6 h-6" />
+      </button>
       <div className="flex-1">
         <h1 className="text-2xl font-bold text-primary-900">
           Olá, {user.name}

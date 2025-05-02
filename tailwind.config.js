@@ -30,6 +30,19 @@ export default {
           900: '#713f12',
           950: '#422006',
         },
+        burgundy: {
+          DEFAULT: '#4D1A2D',
+          dark: '#3B1022',
+        },
+        brown: {
+          DEFAULT: '#764134',
+          dark: '#5A3229',
+          lighter: '#8D5244',
+        },
+        amber: {
+          400: '#FBBF24',
+          500: '#F59E0B',
+        },
         success: {
           50: '#ecfdf5',
           500: '#10b981',
@@ -51,6 +64,7 @@ export default {
       },
       boxShadow: {
         card: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        glow: '0 0 15px rgba(245, 158, 11, 0.5)',
       },
     },
   },

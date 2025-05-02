@@ -29,3 +29,44 @@
     @apply shadow-[0_4px_12px_-2px_rgba(0,0,0,0.08),0_4px_8px_-2px_rgba(0,0,0,0.06)];
   }
 }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.bg-burgundy {
+  background-color: #4D1A2D;
+}
+
+.bg-brown {
+  background-color: #764134;
+}
+
+.bg-dark-burgundy {
+  background-color: #3B1022;
+}
+
+.text-amber {
+  color: #FFC107;
+}
+
+/* Input focus styles */
+.form-input:focus {
+  border-color: #FFC107;
+  box-shadow: 0 0 0 1px rgba(255, 193, 7, 0.2);
+}
+
+/* Button hover animation */
+.btn-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Navigation button active state */
+.nav-btn.active {
+  background-color: #FDB900;
+  color: #4D1A2D;
+}

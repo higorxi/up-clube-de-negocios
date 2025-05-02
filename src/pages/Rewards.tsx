@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gift, Search } from 'lucide-react';
+import { Gift } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import RewardCard from '../components/RewardCard';
 import { rewards, currentUser } from '../data/mockData';
