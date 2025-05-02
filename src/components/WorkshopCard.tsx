@@ -4,6 +4,7 @@ import StatusBadge from './StatusBadge';
 import { Workshop } from '../types';
 import { motion } from 'framer-motion';
 import { formatDate } from '../lib/utils';
+import { Link } from 'react-router-dom';
 
 interface WorkshopCardProps {
   workshop: Workshop;
@@ -77,12 +78,13 @@ const WorkshopCard: React.FC<WorkshopCardProps> = ({ workshop }) => {
             </div>
           </div>
         )}
-        
-        <button 
+
+        <Link 
+          to={`/workshops/${workshop.id}`}
           className="block w-full text-center py-2 bg-primary-700 text-white rounded-md hover:bg-primary-800 transition-colors text-sm font-medium mt-auto"
         >
-          Inscrever-se
-        </button>
+          Ver detalhes
+        </Link>
       </div>
     </motion.div>
   );

@@ -113,7 +113,37 @@ export const workshops: Workshop[] = [
     points: 100,
     date: '2025-04-15T14:00:00',
     isOnline: true,
-    status: 'upcoming'
+    status: 'upcoming',
+    location: '',
+    coverImage: 'https://wordpress-cms-revista-prod-assets.quero.space/uploads/2018/12/03968732bda3214bffa96919415a4c0d5f5faf7b.png',
+    category: 'Design de Interiores',
+    instructor: 'Ana Souza',
+    updatedAt: '2025-03-20',
+    isFeatured: true,
+    lessons: [
+      {
+        id: 'l1',
+        title: 'Introdução às Tendências',
+        description: 'Uma visão geral das principais mudanças para 2025.',
+        duration: '25 min',
+        videoId: 'SZqu7c4LHnE?si=f0Mh18xg__K3vKyf',
+        completed: true,
+      },
+      {
+        id: 'l2',
+        title: 'Estilos e Cores',
+        description: 'Exploração das cores e estilos em alta.',
+        duration: '30 min',
+        videoId: 'kc0j-Wgnr0k?si=NmjE1dhA-v99xywL',
+        completed: false,
+      },
+    ],
+    learningObjectives: [
+      'Identificar tendências de decoração',
+      'Aplicar estilos contemporâneos',
+      'Escolher cores com base em tendências globais',
+    ],
+    targetAudience: 'Profissionais de design de interiores e estudantes da área.',
   },
   {
     id: '2',
@@ -122,11 +152,79 @@ export const workshops: Workshop[] = [
     duration: 2,
     points: 80,
     date: '2025-04-20T10:00:00',
-    location: 'São Paulo, SP',
     isOnline: false,
-    status: 'upcoming'
+    status: 'ongoing',
+    location: 'São Paulo, SP',
+    coverImage: '/images/iluminacao.jpg',
+    category: 'Arquitetura',
+    instructor: 'Carlos Mendes',
+    updatedAt: '2025-04-01',
+    isFeatured: false,
+    lessons: [
+      {
+        id: 'l1',
+        title: 'Tipos de iluminação',
+        description: 'Direta, indireta e difusa.',
+        duration: '20 min',
+        videoId: 'ghi789',
+        completed: false,
+      },
+      {
+        id: 'l2',
+        title: 'Projetando com luz',
+        description: 'Estudos de caso e melhores práticas.',
+        duration: '40 min',
+        videoId: 'jkl012',
+        completed: false,
+      },
+    ],
+    learningObjectives: [
+      'Entender os diferentes tipos de iluminação',
+      'Planejar projetos de iluminação eficientes',
+    ],
+    targetAudience: 'Arquitetos, designers e eletricistas.',
+  },
+  {
+    id: '3',
+    title: 'Como Criar Ambientes Acolhedores',
+    description: 'Transforme espaços com técnicas simples e eficazes.',
+    duration: 1.5,
+    points: 60,
+    date: '2025-03-10T16:00:00',
+    isOnline: true,
+    status: 'completed',
+    location: '',
+    coverImage: '/images/ambientes.jpg',
+    category: 'Design Emocional',
+    instructor: 'Luciana Lima',
+    updatedAt: '2025-02-25',
+    isFeatured: true,
+    lessons: [
+      {
+        id: 'l1',
+        title: 'Psicologia do espaço',
+        description: 'Como o ambiente afeta emoções.',
+        duration: '15 min',
+        videoId: 'mno345',
+        completed: true,
+      },
+      {
+        id: 'l2',
+        title: 'Materiais e iluminação',
+        description: 'Elementos que tornam um espaço acolhedor.',
+        duration: '30 min',
+        videoId: 'pqr678',
+        completed: true,
+      },
+    ],
+    learningObjectives: [
+      'Criar espaços emocionalmente agradáveis',
+      'Utilizar iluminação e materiais de forma estratégica',
+    ],
+    targetAudience: 'Público geral interessado em bem-estar e decoração.',
   }
 ];
+
 
 export const rewards: Reward[] = [
   {

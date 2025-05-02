@@ -36,6 +36,15 @@ export interface ServiceProvider {
   };
 }
 
+export interface Lesson {
+  id: string;
+  title: string;
+  description: string;
+  duration: string;
+  videoId: string;
+  completed: boolean;
+}
+
 export interface Workshop {
   id: string;
   title: string;
@@ -43,11 +52,18 @@ export interface Workshop {
   duration: number; // in hours
   points: number;
   date: string;
-  location?: string;
   isOnline: boolean;
   status: 'upcoming' | 'ongoing' | 'completed';
+  location?: string;
+  coverImage: string;
+  category: string;
+  instructor: string;
+  updatedAt: string;
+  isFeatured: boolean;
+  lessons: Lesson[];
+  learningObjectives: string[];
+  targetAudience: string;
 }
-
 export interface Event {
   id: string;
   title: string;

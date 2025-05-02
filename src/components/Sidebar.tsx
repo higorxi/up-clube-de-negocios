@@ -48,7 +48,7 @@ const SidebarLink: React.FC<SidebarLinkProps> = ({
       {isExpanded ? (
         <span>{label}</span>
       ) : (
-        <div className="absolute left-full ml-2 px-2 py-1 bg-gray-900 text-white text-sm rounded opacity-0 group-hover:opacity-100 whitespace-nowrap z-50 pointer-events-none">
+        <div className="fixed left-[70px] ml-2 px-2 py-1 bg-gray-900 text-white text-sm rounded opacity-0 group-hover:opacity-100 whitespace-nowrap z-50 pointer-events-none">
           {label}
         </div>
       )}
@@ -94,8 +94,7 @@ const Sidebar: React.FC = () => {
       transition={{ duration: 0.3 }}
       className="bg-primary-950 h-screen flex flex-col relative"
     >
-      {/* Botão de Expandir/Colapsar */}
-      <div className="absolute top-6 right-[-12px] z-50">
+           <div className="absolute top-6 right-[-12px] z-50">
         <button
           onClick={toggle}
           className="bg-primary-800 text-white p-1 rounded-full hover:bg-primary-700 transition-colors shadow-lg"
@@ -108,7 +107,6 @@ const Sidebar: React.FC = () => {
         </button>
       </div>
 
-      {/* Logo */}
       <div
         className={cn(
           "p-4 flex items-center mb-6 text-white",
@@ -127,7 +125,7 @@ const Sidebar: React.FC = () => {
       </div>
 
       {/* Links */}
-      <div className="flex-1 px-3 overflow-y-auto custom-scrollbar">
+      <div className="flex-1 px-3 overflow-y-auto overflow-x-hidden custom-scrollbar">
         <SidebarSection title="Geral" isExpanded={isExpanded}>
           <SidebarLink
             to="/"

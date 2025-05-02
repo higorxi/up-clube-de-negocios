@@ -14,6 +14,7 @@ import Events from "./pages/Events";
 import Rewards from "./pages/Rewards";
 import Donations from "./pages/Donations";
 import AuthPage from "./pages/Auth";
+import WorkshopDetail from "./pages/WorkshopDetail";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="lojas/:id" element={<StoreDetails />} />
           <Route path="prestadores" element={<ServiceProviders />} />
           <Route path="workshops" element={<Workshops />} />
+          <Route path="workshops/:id" element={<WorkshopDetail />} />
           <Route path="eventos" element={<Events />} />
           <Route path="recompensas" element={<Rewards />} />
           <Route path="doacoes" element={<Donations />} />
